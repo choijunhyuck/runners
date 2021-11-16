@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.runners.choi.runners">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.AppController"
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launch"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/NoActionBarTheme"
+            android:largeHeap="true">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyClWzh-4fR64VimIj1a-kH_gTUG3c-Jjz0" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".guide.GuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".play.EasyPlayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".play.NormalPlayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".play.HardPlayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".setting.SettingOneAcitivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting.SettingTwoAcitivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".disposable.dMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".disposable.dPlayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".disposable.dResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".challenge.ChallengeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SafeFrameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".record.RecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".record.ResultDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".service.CloudService"/>
+
+    </application>
+
+</manifest>

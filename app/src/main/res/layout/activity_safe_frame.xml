@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_screen_night">
+
+    <LinearLayout
+        android:id="@+id/safety_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_rectangle_safety"
+        android:visibility="visible"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rounded_rectangle_black_transparent"
+        android:gravity="center_vertical|fill_vertical|fill_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/nanumsquareotfbb"
+            android:gravity="center_vertical"
+            android:text="세이프 프레임은 어둠 속 다양한 환경요소군에 당신의 위치를 알리는 역할을 합니다."
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/nanumsquareotfbb"
+            android:text="이 옵션은 화면 상에 보이는 것 처럼 가장자리를 두르는 노란 선 형태로 나타납니다."
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/nanumsquareotfbb"
+            android:text="  * 이 옵션은 17시 이후부터 자동 적용되며, 사용자에 의해 조정될 수 없습니다."
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/safe_frame_asset_text_1" />
+
+    <ImageView
+        android:id="@+id/safe_frame_exit_fab"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/challenge_asset_fab" />
+
+</RelativeLayout>

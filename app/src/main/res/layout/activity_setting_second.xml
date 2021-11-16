@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:facebook="http://schemas.android.com/tools"
+    android:id="@+id/setting_2_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_screen">
+
+    <RelativeLayout
+        android:id="@+id/shadow_effect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_effect"
+        android:visibility="visible">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/ic_main_logo_flat" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        app:srcCompat="@drawable/setting_2_asset_text_1" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_rectangle_white_empty">
+
+        <com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/setting_profile_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            facebook:preset_size="nromal" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/nanumsquareotfbb"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="최준혁"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_facebook_likeboxcountview_caret_width"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/com_facebook_button_background" />
+
+    <ImageView
+        android:id="@+id/setting_2_logout_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/setting_2_record_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/setting_2_asset_button_1" />
+
+    <ImageView
+        android:id="@+id/setting_2_end_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@drawable/setting_2_asset_button_3" />
+
+    <ImageView
+        android:id="@+id/setting_2_record_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/setting_2_end_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/setting_2_asset_button_2" />
+
+
+</RelativeLayout>

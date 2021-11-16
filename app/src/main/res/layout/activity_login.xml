@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_screen"
+    tools:context=".LoginActivity">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/title_view"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/login_text_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/ic_main_logo_flat" />
+
+    <ImageView
+        android:id="@+id/login_text_1"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/informLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        app:srcCompat="@drawable/login_asset_text1" />
+
+    <LinearLayout
+        android:id="@+id/informLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_rectangle_black_transparent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/login_with_facebook_button"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/login_asset_facebook_button" />
+
+        <ImageView
+            android:id="@+id/or_view"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/login_asset_text2" />
+
+        <ImageView
+            android:id="@+id/login_with_disposable_button"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/login_asset_disposable_button" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ex_disposable_button"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/informLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/login_asset_text3" />
+
+    <RelativeLayout
+        android:id="@+id/welcome_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shadow_effect"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/nanumsquareotfr"
+            android:text="환영합니다!"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanumsquareotfr"
+            android:text="잠시만 기다려 주세요..."
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
