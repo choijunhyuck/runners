@@ -15,12 +15,6 @@
             android:supportsRtl="true"
             android:theme="@style/NoActionBarTheme"
             android:largeHeap="true">
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyClWzh-4fR64VimIj1a-kH_gTUG3c-Jjz0" />
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
